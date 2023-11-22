@@ -1,0 +1,521 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainApp: '#a6d1dd',
+            },
+            gridTemplateColumns: {
+              six: 'repeat(6fr, auto)',
+              two: 'repeat(2fr, auto)',
+            },
+            screens: {
+              tall: { raw: '(min-height: 1225px) and (max-width: 1024px)' },
+              maxLg: { raw: '(max-height: 1024px)' },
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Figma Design Implementation</title>
+  </head>
+  <body
+    class="w-full min-w-[340px] px-[10px] lg:px-0 [font-family:'Manrope-Light',Helvetica] font-light text-[#37465a] text-[16px] lg:min-w-[1245px] leading-[140%] h-auto"
+  >
+    <div class="flex flex-row justify-center w-full">
+      <div class="bg-white w-[360px] relative lg:w-full">
+        <div
+          class="inline-flex w-full lg:gap-[30px] flex-col items-center gap-[20px] pt-0 pb-[20px] lg:pb-[30px] px-0 absolute top-0 left-0 bg-white"
+        >
+          <!-- consider a loop -->
+          <div
+            class="flex w-[360px] lg:h-[50px] md:w-full items-center justify-between px-[20px] py-[10px] relative flex-[0_0_auto] bg-[#252f3d]"
+          >
+            <img
+              class="relative w-[20px] h-[20px] lg:hidden"
+              alt="Layer"
+              src="./public/Layer_1.svg"
+            />
+            <div class="relative w-[229px] h-[22px]">
+              <img
+                class="absolute w-[22px] h-[22px] top-0 left-0"
+                alt="Fluent checkmark"
+                src="./public/fluent_checkmark-starburst-20-regular.svg"
+              />
+              <div
+                class="absolute top-[7px] left-[30px] [font-family:'Manrope-Medium',Helvetica] font-medium text-white text-[12px] tracking-[0] leading-[12px] whitespace-nowrap"
+              >
+                30-day Satisfaction Guarantee
+              </div>
+            </div>
+            <div class="hidden lg:block relative w-[229px] h-[22px]">
+              <img
+                class="absolute w-[22px] h-[22px] top-0 left-0"
+                alt="Fluent checkmark"
+                src="./public/ph_truck-light.svg"
+              />
+              <div
+                class="absolute top-[7px] left-[30px] [font-family:'Manrope-Medium',Helvetica] font-medium text-white text-[12px] tracking-[0] leading-[12px] whitespace-nowrap"
+              >
+                Free delivery on orders over $40.00
+              </div>
+            </div>
+            <div class="hidden lg:block relative w-[229px] h-[22px]">
+              <img
+                class="absolute w-[22px] h-[22px] top-0 left-0"
+                alt="Fluent checkmark"
+                src="./public/mdi_cards-heart-outline.svg"
+              />
+              <div
+                class="absolute top-[7px] left-[30px] [font-family:'Manrope-Medium',Helvetica] font-medium text-white text-[12px] tracking-[0] leading-[12px] whitespace-nowrap"
+              >
+                50.000+ HAPPY CUSTOMERS
+              </div>
+            </div>
+            <div class="hidden lg:block relative w-[229px] h-[22px]">
+              <img
+                class="absolute w-[22px] h-[22px] top-0 left-0"
+                alt="Fluent checkmark"
+                src="./public/fluent_arrow-sync-checkmark-20-regular.svg"
+              />
+              <div
+                class="absolute top-[7px] left-[30px] [font-family:'Manrope-Medium',Helvetica] font-medium text-white text-[12px] tracking-[0] leading-[12px] whitespace-nowrap"
+              >
+                100% Money Back Guarantee
+              </div>
+            </div>
+            <img
+              class="relative w-[20px] h-[20px] lg:hidden"
+              alt="Layer"
+              src="./public/Layer_1 (1).svg"
+            />
+          </div>
+          <!-- loop -->
+          <!-- header  -->
+
+          <!-- subheader -->
+          <div
+            class="flex w-[320px] lg:w-full lg:p-[0px_127px] items-center justify-between relative flex-[0_0_auto]"
+          >
+            <img
+              class="relative w-[106.67px] h-[20px] object-cover lg:h-[36px] lg:w-[192px]"
+              alt="Img"
+              src="./public/600a41c73b670a97ae1d4f47_Clarifion_Logo 1.png"
+            />
+            <div class="flex gap-4">
+              <img
+                class="relative flex-[0_0_auto] w-[41px] h-[16px] lg:w-[88px] lg:h-[32px]"
+                alt="Frame"
+                src="./public/Frame 1484578055.svg"
+              />
+              <img
+                class="relative flex-[0_0_auto] w-[41px] h-[16px] lg:w-[88px] lg:h-[32px]"
+                alt="Frame"
+                src="./public/norton-antivirus-logo 1.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="inline-flex mb-[50px] items-center flex-col gap-[24px] mt-[135px] lg:relative w-full lg:left-0 lg:px-[127px]"
+        >
+          <div
+            class="flex flex-col w-[320px] lg:w-full items-center gap-[24px] relative flex-[0_0_auto]"
+          >
+            <p
+              class="relative self-stretch mt-[-1.00px] [font-family:'Manrope-Regular',Helvetica] font-normal text-black text-[32px] text-center tracking-[0] leading-[44.8px]"
+            >
+              Wait ! Your Order In Progress.
+            </p>
+            <p
+              class="relative self-stretch [font-family:'Manrope-Regular',Helvetica] font-normal text-[#4d5254] text-[16px] text-center tracking-[0] leading-[22.4px]"
+            >
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipicising
+            </p>
+          </div>
+          <div
+            class="flex w-[320px] items-center justify-between relative lg:w-full text-[12px] font-normal tracking-[0] leading-[13.2px] lg:text-[20px]"
+          >
+            <div
+              class="inline-flex flex-col items-center justify-center gap-[8px] relative lg:flex-row"
+            >
+              <div
+                class="relative w-[20px] h-[20px] bg-[#85bf55] rounded-[10px] lg:w-[40px] lg:h-[40px] lg:rounded-[20px]"
+              >
+                <img
+                  class="absolute w-[12px] h-[9px] top-[6px] left-[4px] lg:left-[12px] lg:top-[12px] lg:h-[16px] lg:w-[16px]"
+                  alt="Tick circle"
+                  src="./public/tick-circle (2).svg"
+                />
+              </div>
+              <div class="relative">Cart Review</div>
+            </div>
+            <div
+              class="inline-flex flex-col items-center justify-center gap-[8px] relative flex-[0_0_auto] lg:flex-row"
+            >
+              <div
+                class="relative w-[20px] h-[20px] bg-[#85bf55] rounded-[10px] lg:w-[40px] lg:h-[40px] lg:rounded-[20px]"
+              >
+                <img
+                  class="absolute w-[12px] h-[9px] top-[6px] left-[4px] lg:left-[12px] lg:top-[12px] lg:h-[16px] lg:w-[16px]"
+                  alt="Tick circle"
+                  src="./public/tick-circle (2).svg"
+                />
+              </div>
+              <div class="relative">Checkout</div>
+            </div>
+            <div
+              class="inline-flex flex-col items-center justify-center gap-[8px] relative flex-[0_0_auto] lg:flex-row"
+            >
+              <div class="relative w-[22px] h-[20px] lg:w-[40px] lg:h-[40px]">
+                <div
+                  class="relative w-[20px] h-[20px] bg-[#2c7ef8] rounded-[10px] lg:rounded-[20px] lg:w-full lg:h-full"
+                >
+                  <div
+                    class="absolute top-[3px] left-[6px] font-normal text-white text-[14px] lg:text-[20px] tracking-[0] leading-[15.4px] lg:top-[12px] lg:left-[14px]"
+                  >
+                    3
+                  </div>
+                </div>
+              </div>
+              <div class="relative">Special Offer</div>
+            </div>
+            <div
+              class="inline-flex flex-col items-center justify-center gap-[8px] relative flex-[0_0_auto] lg:flex-row"
+            >
+              <div class="relative w-[22px] h-[20px] lg:w-[40px] lg:h-[40px]">
+                <div
+                  class="relative w-[20px] h-[20px] rounded-[10px] border border-solid border-[#2c7ef8] lg:w-full lg:h-full lg:rounded-[20px]"
+                >
+                  <div
+                    class="absolute top-[2px] left-[4px] text-[#2c7ef8] text-[14px] tracking-[0] leading-[15.4px] whitespace-nowrap lg:text-[20px] lg:top-[12px] lg:left-[14px]"
+                  >
+                    4
+                  </div>
+                </div>
+              </div>
+              <div class="relative">Confirmation</div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 grid-rows-1 lg:min-w-[1245px] w-[320px] lg:place-items-center lg:py-[40px] items-start gap-[24px] relative lg:grid lg:h-[879px] lg:w-full lg:grid-cols-2 lg:gap-[40px]"
+          >
+            <div
+              class="lg:col-start-2 lg:w-[550px] lg:h-fit row-start-1 self-stretch grid grid-cols-1 grid-rows-six gap-[24px] lg:gap-[32px]"
+            >
+              <p
+                class="lg:text-[32px] relative self-start lg:text-start font-normal text-[24px] text-center tracking-[0] text-black leading-[140%]"
+              >
+                <span class="text-[#2c7ef8]">ONE TIME ONLY</span>special price
+                for 6 extra Clarifion for only
+                <span class="text-[#2c7ef8]">$14 each</span>
+                ($84.00 total!)
+              </p>
+              <img
+                class="relative w-[320px] h-[328px] object-cover hidden tall:block"
+                alt="Image"
+                src="./public/image 4.png"
+              />
+              <div class="flex gap-[16px] items-center lg:gap-[24px]">
+                <div
+                  class="w-80[px] lg:w-[134px] h-[80px] lg:h-[134px] bg-[#2c7ef8] flex items-center rounded-[10px]"
+                >
+                  <img
+                    class="w-full h-full"
+                    alt="Image removebg"
+                    src="./public/image-removebg-preview (12) 1.png"
+                  />
+                </div>
+                <div class="flex flex-col w-full gap-[12px] lg:gap-[15px]">
+                  <div
+                    class="flex items-center justify-between relative self-start w-full"
+                  >
+                    <div
+                      class="relative w-fit font-normal capitalize text-black text-[14px] lg:text-[20px] tracking-[0] leading-[28.0px] whitespace-nowrap"
+                    >
+                      Clarifion Air Ionizer
+                    </div>
+                    <div
+                      class="inline-flex items-center justify-center gap-[10px] relative flex-[0_0_auto]"
+                    >
+                      <div
+                        class="relative w-fit [text-shadow:0px_6px_32px_#00000061] text-[10px] font-semibold text-[#969696] lg:text-[16px] tracking-[0] leading-[normal] line-through whitespace-nowrap"
+                      >
+                        $180
+                      </div>
+                      <div
+                        class="relative w-fit mt-[-1.00px] font-semibold text-[#2c7ef8] text-[14px] lg:text-[22px] tracking-[0] leading-[30.8px] whitespace-nowrap"
+                      >
+                        $84
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    class="relative w-[98px] h-[18px]"
+                    alt="Stars"
+                    src="./public/Stars.svg"
+                  />
+                  <div class="flex">
+                    <div class="bg-[#e3edff] rounded-[8px]">
+                      <div class="bg-[#2c7ef8] rounded-[4.27px]"></div>
+                    </div>
+                    <div
+                      class="relative w-fit mt-[-1.39px] text-[#37465a] text-[12px] lg:text-[16px] tracking-[0] leading-[normal]"
+                    >
+                      12 left in Stock
+                    </div>
+                  </div>
+                  <div
+                    class="hidden lg:flex relative w-[398px] mt-[-1.39px] tracking-[0] leading-[normal] text-[#4D5254]"
+                  >
+                    Simply plug a Clarifion into any standard outlet and replace
+                    bulky, expensive air purifiers with a simple.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex lg:hidden relative w-[326px] tracking-[0] leading-[140%] text-[12px] text-center text-[#4D5254]"
+              >
+                Simply plug a Clarifion into any standard outlet and replace
+                bulky, expensive air purifiers with a simple.
+              </div>
+              <div class="flex flex-col text-[12px] lg:text-[16px]">
+                <div class="flex gap-[12px]">
+                  <img
+                    src="./public/tick-circle.svg"
+                    class="lg:h-[22px] lg:w-[22px] h-[16px] w-[16px]"
+                  />
+                  <p>
+                    Negative Ion Technology may
+                    <span class="font-bold"> help with allergens </span>
+                  </p>
+                </div>
+                <div class="flex gap-[12px]">
+                  <img
+                    src="./public/tick-circle.svg"
+                    class="lg:h-[22px] lg:w-[22px] h-[16px] w-[16px]"
+                  />
+                  <p>
+                    Designed for
+                    <span class="font-bold"> air rejuvenation </span>
+                  </p>
+                </div>
+                <div class="flex gap-[12px]">
+                  <img
+                    src="./public/tick-circle.svg"
+                    class="lg:h-[22px] lg:w-[22px] h-[16px] w-[16px]"
+                  />
+                  <p>
+                    <span class="font-bold">Perfect for every room</span> in all
+                    types of places.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex px-[16px] py-[12px] gap-[12px] bg-[#EDF3FD] items-center font-bold"
+              >
+                <img
+                  src="./public/Group 1000004656.svg"
+                  class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                />
+                <p class="leading-[140%] lg:text-[16px] text-[14px]">
+                  Save <span class="text-[#2c7ef8] font-normal">53% </span> and
+                  get
+                  <span class="text-[#2c7ef8] font-normal"
+                    >6 extra Clarifision</span
+                  >
+                  <span class="text-[#2c7ef8] font-normal">for only </span>
+                  $14 Each.
+                </p>
+              </div>
+              <div class="flex flex-col gap-[12px] lg:gap-[20px]">
+                <div class="flex flex-col gap-[12px]">
+                  <div
+                    class="rounded-[50px] bg-[#59AE43] flex gap-[16px] lg:gap-[20px] px-[64px] py-[16px] justify-center"
+                  >
+                    <p class="text-white text-[12px] lg:text-[20px] uppercase">
+                      Yes - Claim my discount
+                    </p>
+                    <img
+                      src="./public/Line 1.svg"
+                      class="w-[12px] lg:w-[16px] text-white"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-center flex-col gap-[12px] lg:flex-row px-[16px] py-[8px] border border-[#CFCFCF] text-[#4D5254] text-[12px] font-normal tracking-normal capitalize leading-[140%] items-center whitespace-nowrap"
+                  >
+                    <div class="flex">
+                      <p
+                        after="|"
+                        class="after:content-[attr(after)] after:mx-[6px] lg:after:mx-[8px]"
+                      >
+                        Free shipping
+                      </p>
+                      <div class="flex items-center gap-[10px]">
+                        <img
+                          src="./public/lock (7) 1.svg"
+                          class="w-[12px] h-[12px]"
+                        />
+                        <p
+                          after="|"
+                          class="lg:after:content-[attr(after)] lg:after:ml-[8px] lg:after:mr-[8px] leading-[150%]"
+                        >
+                          Secure 256-bit SSL encryption
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <img
+                        src="./public/visa.svg"
+                        alt="visa icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                      <img
+                        src="./public/shop pay.svg"
+                        alt="shop pay icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                      <img
+                        src="./public/paypal.svg"
+                        alt="paypal icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                      <img
+                        src="./public/mastercard.svg"
+                        alt="mastercard icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                      <img
+                        src="./public/gpay.svg"
+                        alt="gpay icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                      <img
+                        src="./public/apple pay.svg"
+                        alt="apple pay icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                      <img
+                        src="./public/amex.svg"
+                        alt="amex icon"
+                        class="w-[24px] h-[14px]"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center">
+                  <p
+                    class="uppercase text-[#F82C2C] text-[12px] lg:text-[18px] font-medium underline"
+                  >
+                    No thanks, I don’t want this.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-[16px] text-[12px] lg:text-[16px] self-stretch"
+              >
+                <img
+                  src="./public/image 6.png"
+                  alt="100% satisfaction"
+                  class="lg:w-[88px] lg:h-[88px] h-[48px] w-[48px] leading-[140%] font-semibold"
+                />
+                <p class="lg:w-[446px] self-center">
+                  If you are not completely thrilled with your Clarifion - We
+                  have a
+                  <span class="font-bold">
+                    30 day satisfaction guarantee.
+                  </span>
+                  Please refer to our return policy at the bottom of the page
+                  for more details. Happy Shopping!
+                </p>
+              </div>
+            </div>
+            <div
+              class="hidden lg:col-start-1 self-start lg:row-start-1 lg:grid lg:grid-cols-1 lg:grid-rows-two grid-gap-[24px]"
+            >
+              <img
+                class="relative w-[320px] h-[328px] object-cover lg:w-[575px] lg:h-[591px]"
+                alt="Image"
+                src="./public/image 4.png"
+              />
+              <div
+                class="flex flex-col p-[24px] w-[575px] gap-[18px] items-start rounded-[10px]"
+              >
+                <div class="flex gap-[13px] items-start">
+                  <img
+                    src="./public/Rectangle 1127.png"
+                    alt="avatar critique"
+                    class="h-[48px] w-[48px] rounded-[100px]"
+                  />
+                  <div class="flex flex-col justify-between h-full">
+                    <img
+                      src="./public/Stars.svg"
+                      alt="starts rating"
+                      class="w-[78px] h-[12px]"
+                    />
+                    <div class="flex gap-1">
+                      <p
+                        class="text-[#333] text-[14px] font-bold leading-[100%]"
+                      >
+                        Ken T.
+                      </p>
+                      <img
+                        src="./public/verify 1.svg"
+                        alt="verif v"
+                        class="w-[16px] h-[16px]"
+                      />
+                      <p
+                        class="text-[12px] text-[#5BB59A] font-normal leading-[120%]"
+                      >
+                        Verified Customer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="text-[#4D5254] font-normal heading-[150%] self-stretch"
+                >
+                  “As soon as the Clarifions arrived I put one in my bedroom.
+                  This was late in the afternoon. When I went to the bedroom in
+                  the evening it smelled clean. When I went to bed I felt I
+                  could breathe better. Wonderful.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[360px] lg:w-full bg-[#252f3d] relative bottom-0 lg:h-[88px] h-auto [font-family:'Manrope-Regular',Helvetica] font-normal text-white lg:text-[16px] text-[12px] capitalize tracking-[0] leading-[22.4px] whitespace-nowrap"
+        >
+          <div
+            class="px-0 p-[20px] py-[8px] items-center lg:top-[24px] lg:left-[127px] relative left-0 top-0 lg:right-[119px] lg:absolute flex flex-col lg:flex-row gap-[16px] justify-between"
+          >
+            <div class="inline-flex items-center gap-[16px]">
+              <div class="relative w-fit">Copyright (c) 2023</div>
+              <img
+                class="relative w-[1px] h-[24px] lg:h-[14px]"
+                alt="separator"
+                src="./public/Line_separator.svg"
+              />
+              <div class="relative w-fit">clarifionsupport@clarifion.com</div>
+            </div>
+            <div class="flex items-center gap-[16px]">
+              <img
+                class="relative lg:w-[16px] lg:h-[16px] w-[13px] h-[13px]"
+                alt="Lock"
+                src="./public/lock (7) 1 (1).svg"
+              />
+              <div class="relative w-fit">Secure 256-bit Ssl Encryption.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
